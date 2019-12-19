@@ -23,7 +23,7 @@ def odds():
     data = request.get_json()
     for data in data.values():
         for number in data:
-            if number % 3 == 0:
+            if number % 2 == 1:
                 return jsonify({"odds": number})
 
 
